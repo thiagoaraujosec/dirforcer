@@ -1,7 +1,6 @@
 import requests 
 import time
 import argparse
-from pyfiglet import Figlet
 import random 
 
 Green="\033[1;33m"
@@ -20,8 +19,7 @@ args = arg.parse_args()
 url = args.domain 
 directory = open(args.wordlist, "r")
 
-f = Figlet(font="digital")
-print(random.choice(colors) + f.renderText('DirForcer') + Reset)
+print(random.choice(colors) + "DirForcer" + Reset)
 
 print(Blue + "Target : "+ args.domain + Reset)
 
